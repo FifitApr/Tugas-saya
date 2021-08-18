@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+       var pilih = prompt('masukkan bangun datar')
+
+       if (pilih === 'Persegi' ) {
+           var sisi1 = prompt('masukkan angka')
+           var sisi2 = prompt('masukkan angka')
+           function hitungLuas(a,b) {
+              var hasil = (a*b);
+              return hasil;
+           }
+           var nilai = hitungLuas(sisi1 , sisi2);
+           document.write('<b>Persegi</b> <br>')
+           document.write('sisi:',sisi1, '<br>')
+           document.write('sisi:', sisi2, '<br>')
+           document.write('Hasil Menghitung S X S: ',nilai);
+
+       }else if(pilih === 'Persegi Panjang'){
+           var p = prompt('masukkan panjang')
+           var l = prompt('masukkan lebar')
+           function hitungLuas(p,l) {
+               var hasil = (p*l)
+               return hasil;
+           }
+           var nilai = hitungLuas(p, l);
+           document.write('<b>Persegi Panjang</b> <br>')
+           document.write('Sisi:', p, '<br>')
+           document.write('Sisi:', l, '<br>')
+           document.write('Hasil menghitung P X L: ',nilai )
+
+       } else if(pilih === 'Jajar genjang'){
+           var a = prompt('masukkan alas')
+           var t = prompt('masukkan tinggi')
+           function hitungLuas(a,t) {
+               var hasil = (a*t)
+               return hasil;
+           }
+           var nilai = hitungLuas(a,t);
+           document.write('<b>Jajar genjang</b> <br>')
+           document.write('Sisi: ', a, '<br>')
+           document.write('Sisi: ', t, '<br>')
+           document.write('Hasil menghitung A X T: ', nilai)
+
+       } else if(pilih === 'Segitiga'){
+           var a = prompt('masukkan alas')
+           var t = prompt('masukkan tinggi')
+           function hitungLuas(a,t) {
+               var hasil = 1/2*a*t
+               return hasil;
+           }
+           var nilai = hitungLuas(a,t);
+           document.write('<b>Segitiga</b> <br>')
+           document.write('Sisi: ', a, '<br>')
+           document.write('Sisi: ', t, '<br>')
+           document.write('Hasil menghitung 1/2 X A X T: ', nilai)
+       }
+   </script>
+</body>
+</html>
